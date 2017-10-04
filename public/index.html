@@ -5,14 +5,22 @@
   integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
   crossorigin="anonymous"></script>
 <script type="text/javascript" src="http://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="http://www.hitchjs.com/dist/hitch-0.6.1.min.js"></script>
+<script type="text/javascript" src="http://www.hitchjs.com/use/chill.text/1"></script>
 
 <script>
-$(document).ready(function(){
-    $('#myTable').DataTable();
-});
+  $(document).ready(function(){
+      $('#myTable').DataTable();
+  });
 </script>
 
-<table id="myTable" class="display table table-bordered table-hover table-condensed">
+<style type="text/css" data-hitch-interpret>
+  td:-text-contains(^fail$){ color: white; background-color: tomato; }
+  td:-text-contains(^risky$){ color: white; background-color: orange; }
+  td:-text-contains(^pass$){ color: white; background-color: MediumSeaGreen; }
+</style>
+
+<table id="myTable" class="table">
   <thead>
       <tr>
           <th >
