@@ -2,7 +2,7 @@
 
 # Demo
 
-https://led-table.herokuapp.com
+https://led-table.herokuapp.com (Might take a few seconds to load because I'm running on a free Heroku instance)
 
 # How to run locally
 
